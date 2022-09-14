@@ -9,7 +9,7 @@ function convertToRoman(num) {
     decimalKeys.forEach(key => { //decimalKeys subtracts "num" argument from and subtracts from largest key
       while (key <= num){
         conversion += romanNumerals[key]; //converts largest integer key in line 3 into string containing and convert to Roman Numeral
-        num -= key; //removes key to check for next largest integer key
+        num -= key; //removes key to check for next largest integer key equal to original "num" argument
       }
     })
    return conversion;
